@@ -60,6 +60,7 @@ function game(){
             }
         } 
       }
+
     while(true){  
       constant1 = true;
       while(constant1){
@@ -75,7 +76,9 @@ function game(){
           }else if (pointsForComputer > pointsForPlayer){
             console.log("Oh no you lost! The computer won :C ");
             constant1 = false;
-          } 
+          }      
+          pointsForPlayer = 0;
+          pointsForComputer = 0;
         }
       } 
     const playAgain = confirm("Do you want to play again");
